@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form method="GET">
+	<input text={{name}} name="name"/>
+	<button type="submit">submit</button>
+	{{isget}}
+</form><br/>
+<form method="POST">
+	<input text={{name}} name="name"/>
+	<button type="submit">submit</button>
+	{{ispost}}
+</form>
+<a href="/">back</a>
+
+{% endblock %}
